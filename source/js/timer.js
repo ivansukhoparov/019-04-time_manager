@@ -17,8 +17,6 @@ const addZero = function (value) {
     return value;
 }
 
-
-
 const printTime = function (value) {
     const seconds = value % 60; // get seconds
     const minutes = Math.floor(value / 60 % 60); // get minutes

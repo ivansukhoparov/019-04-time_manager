@@ -5,60 +5,24 @@
     <meta charset="utf-8" />
     <title>Timer</title>
     <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width; initial-scale=1">
 </head>
 
-<body class="page">
+<body class="page__body">
 
     <section class="mobile">
-        <div class="mobile__menu">
-            <p class="mobile__menu-text">Menu</p>
-            <button class="button button--menu"><span class="visually-hidden">Open menu</span></button>
+        <div class="title title--mobile mobile__menu">
+            <button class="button  button--add"><span class="visually-hidden">Open menu</span></button>
+            <button class="button  button--list"><span class="visually-hidden">Open menu</span></button>
         </div>
-
-        <div class="mobile__active">
-            <p class="mobile__active-text">01 - Item 1</p>
-            <p class="mobile__active-text">01:05:58</p>
+        <div class="title title--mobile mobile__active">
+            <div class="mobile__wrapper">
+                <p class="mobile__active-text">01 - Item 1</p>
+                <p class="mobile__active-text">01:05:58</p>
+            </div>
             <button class="button button--more"><span class="visually-hidden">Show more</span></button>
         </div>
-
-
     </section>
-
-
-    <section class="content project-list">
-
-        <button class="button button--close"><span class="visually-hidden">CLose</span></button>
-        <div class="project-list__item project-list__item--new">Add new </div>
-        <ul class="project-list__list">
-
-            <li class="project-list__item project-list__item--active">
-                <p class="project-list__text">01 - Item 1</p>
-                <p class="project-list__text">01:05:58</p>
-            </li>
-
-            <li class="project-list__item project-list__item">
-                <p class="project-list__text">02 - Item 2</p>
-                <p class="project-list__text">01:05:58</p>
-            </li>
-
-            <li class="project-list__item project-list__item">
-                <p class="project-list__text">03 - Item 3</p>
-                <p class="project-list__text">01:05:58</p>
-            </li>
-
-            <li class="project-list__item project-list__item">
-                <p class="project-list__text">04 - Item 4</p>
-                <p class="project-list__text">01:05:58</p>
-            </li>
-
-            <li class="project-list__item project-list__item">
-                <p class="project-list__text">05 - Item 5</p>
-                <p class="project-list__text">01:05:58</p>
-            </li>
-
-        </ul>
-    </section>
-
 
     <section class="main">
         <p class="main__timer" id="timer">00:00:00 </p>
@@ -66,55 +30,91 @@
     </section>
 
 
+    <section class="content projects-list">
+        <button class="button button--close"><span class="visually-hidden">CLose</span></button>
+        <a class="projects-list__info projects-list__info--add">Add new </a>
+        <ul class="projects-list__list">
+            <li class="projects-list__item projects-list__item--active">
+                <a class="projects-list__info projects-list__info--active">
+                    <p class="projects-list__text">01 - Item 1</p>
+                    <p class="projects-list__text">01:05:58</p>
+                </a>
+            </li>
+            <li class="projects-list__item projects-list__item">
+                <a class="projects-list__info">
+                    <p class="projects-list__text">02 - Item 2</p>
+                    <p class="projects-list__text">01:05:58</p>
+                </a>
+            </li>
+            <li class="projects-list__item projects-list__item">
+                <a class="projects-list__info">
+                    <p class="projects-list__text">03 - Item 3</p>
+                    <p class="projects-list__text">01:05:58</p>
+                </a>
+            </li>
+            <li class="projects-list__item projects-list__item">
+                <a class="projects-list__info">
+                    <p class="projects-list__text">04 - Item 4</p>
+                    <p class="projects-list__text">01:05:58</p>
+                </a>
+            </li>
+            <li class="projects-list__item projects-list__item">
+                <a class="projects-list__info">
+                    <p class="projects-list__text">05 - Item 5</p>
+                    <p class="projects-list__text">01:05:58</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
     <section class="content add">
         <button class="button button--close"><span class="visually-hidden">CLose</span></button>
-        <div class="add__title">Add new</div>
-
+        <div class=" title add__title">Add new</div>
         <form class="add__form" action="#">
             <label class="add__label">Project name *:</label>
-            <input type="text" id="project-name" placeholder="New project" value="">
+            <input type="text" class="add__text-input" id="project-name" placeholder="New project" value="">
             <label class="add__label">Cost:</label>
-            <input type="text" id="project-cost" placeholder="1000" value="">
-            <input type="text" id="project-currency" placeholder="$" value="">
+            <div class="add__cost-wrapper">
+                           <input type="text" class="add__text-input " id="project-cost" placeholder="1000" value="">
+            <input type="text" class="add__text-input add__text-input--currency" id="project-currency" placeholder="$" value=""> 
+            </div>
+
             <button class="button add__button button--add"><span class="visually-hidden">Add
                     project</span></button>
         </form>
-
-
     </section>
 
     <section class="content details">
         <button class="button button--close"><span class="visually-hidden">CLose</span></button>
-        <div class="details__title">01 - Item 1</div>
+        <div class="title details__title">01 - Item 1</div>
         <ul class="details__list">
             <li class="details__item parameter">
-                <p class="parameter__title">Total time</p>
-                <p class="parameter__value">00:00:00</p>
+                <p class="details__parameter">Total time</p>
+                <p class="details__value">00:00:00</p>
             </li>
             <li class="details__item parameter">
-                <p class="parameter__title">Current Session</p>
-                <p class="parameter__value">00:00:00</p>
+                <p class="details__parameter">Current Session</p>
+                <p class="details__value">00:00:00</p>
             </li>
             <li class="details__item parameter">
-                <p class="parameter__title">Number of sessions</p>
-                <p class="parameter__value">1</p>
+                <p class="details__parameter">Number of sessions</p>
+                <p class="details__value">1</p>
             </li>
             <li class="details__item parameter">
-                <p class="parameter__title">Total cost</p>
-                <p class="parameter__value">2000 $</p>
+                <p class="details__parameter">Total cost</p>
+                <p class="details__value">2000 $</p>
             </li>
             <li class="details__item parameter">
-                <p class="parameter__title">Cost per hour</p>
-                <p class="parameter__value">100 $</p>
+                <p class="details__parameter">Cost per hour</p>
+                <p class="details__value">100 $</p>
             </li>
-            <button class="button detail__button button--del"><span class="visually-hidden">Delete
-                    project</span></button>
-
         </ul>
-
+        <button class="button details__button button--del"><span class="visually-hidden">Delete
+                project</span></button>
     </section>
 
     <script src="js/timer.js"></script>
+
 </body>
 
 </html>

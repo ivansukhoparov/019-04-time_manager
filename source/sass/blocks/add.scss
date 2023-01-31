@@ -1,0 +1,35 @@
+.add__form{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.add__button{
+    align-self: center;
+}
+
+
+.add__label{
+    margin:10px;
+}
+
+.add__cost-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 20px 0;
+}
+.add__text-input{
+    flex-grow: 1;
+    height: 30px;
+    margin: 0;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    font-size: 20px;
+
+    &--currency{
+        width: 30px;
+        flex-grow: 0;
+        text-align: center;
+    }
+}

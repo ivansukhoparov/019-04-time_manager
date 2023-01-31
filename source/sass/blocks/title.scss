@@ -1,0 +1,15 @@
+.title {
+    height: 60px;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid #000;
+    border-radius: 20px;
+    align-items: center;
+
+    &--mobile{
+        margin: 10px;
+    }
+}

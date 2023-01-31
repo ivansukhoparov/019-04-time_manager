@@ -1,44 +1,16 @@
+@import "global/global.scss";
+@import "global/variables.scss";
+@import "global/fonts.scss";
 
 
-.page {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@import "blocks/page.scss";
+@import "blocks/title.scss";
+@import "blocks/content.scss";
+@import "blocks/button.scss";
+@import "blocks/main.scss";
+@import "blocks/details.scss";
+@import "blocks/add.scss";
+@import "blocks/projects-list.scss";
+@import "blocks/mobile.scss";
 
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.main__timer {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.main__button {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    font-size: 34px;
-    font-weight: bold;
-    background-color: rgb(230, 230, 230);
-}
-
-.main__button:hover {
-    background-color: rgb(221, 221, 221);
-}
-
-.main__button:active {
-    background-color: rgb(240, 240, 240);
-}
-
-.content{
-    border: 2px solid #000;
-    border-radius: 20px;
-    padding: 10px;
-}
+@import "blocks/visually-hidden.scss";

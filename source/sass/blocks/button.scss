@@ -1,0 +1,141 @@
+.button {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba($color: #000000, $alpha: 0);
+
+    &--add {
+
+        &::before {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 26px;
+            position: absolute;
+            background-color: #000;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            height: 26px;
+            width: 3px;
+            position: absolute;
+            background-color: #000;
+        }
+    }
+
+    &--close {
+
+        &::before {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 26px;
+            position: absolute;
+            background-color: #000;
+            margin-top: -1px;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            height: 26px;
+            width: 3px;
+            position: absolute;
+            background-color: #000;
+            margin-left: 1px;
+            transform: rotate(45deg);
+        }
+    }
+
+    &--more {
+
+        &::after {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: #000;
+            box-shadow: 10px 0 0 0 #000, -10px 0 0 0 #000;
+        }
+
+        &:hover::after {
+            box-shadow: 10px 0 0 0 #858585, -10px 0 0 0 #858585;
+        }
+
+        &:active::after {
+            box-shadow: 10px 0 0 0 #adadad, -10px 0 0 0 #adadad;
+        }
+    }
+
+
+    &--list {
+
+        &::after {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 26px;
+            position: absolute;
+            background-color: #000;
+            box-shadow: 0 -10px 0 0 #000, 0 10px 0 0 #000;
+        }
+
+        &:hover::after {
+            box-shadow: 0 -10px 0 0 #858585, 0 10px 0 0 #858585;
+        }
+
+        &:active::after {
+            box-shadow: 0 -10px 0 0 #adadad, 0 10px 0 0 #adadad;
+        }
+    }
+
+    &--del {
+        background-image: url("../../img/icon-del.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &--close {
+        position: absolute;
+        margin-top: 10px;
+
+    }
+
+}
+
+.button:hover::after,
+.button:hover::before {
+    background-color: #858585;
+}
+
+
+.button:active::after,
+.button:active::before {
+    background-color: #adadad;
+}
+
+.button:hover {
+    background-color: rgb(221, 221, 221);
+    border-color: #858585;
+}
+
+.button:focus {
+    background-color: rgb(221, 221, 221);
+}
+
+.button:active {
+    background-color: rgb(240, 240, 240);
+    border-color: #adadad;
+}

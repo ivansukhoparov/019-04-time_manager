@@ -1,0 +1,48 @@
+.projects-list__info{
+
+    height: 60px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    color:#858585;
+    border: 2px solid #858585;
+    border-radius: 20px;
+    align-items: flex-start;
+    justify-content: center;
+
+    &--active{
+        color:#000000;
+        border: 2px solid #000000;
+        box-shadow: inset 0 0 0 2px #000000;
+        font-weight: bold;
+    }
+
+    &--add {
+        margin: 0 0 10px 0;
+        text-transform: uppercase;
+        color:#000000;
+        border: 2px solid #000000;
+    }
+
+    &:hover {
+        background-color: rgb(221, 221, 221);
+        border-color: #858585;
+        box-shadow: inset 0 0 0 2px #858585;
+        color:#858585;
+    }
+    
+    &:focus {
+        background-color: rgb(221, 221, 221);
+    }
+    
+    &:active {
+        background-color: rgb(240, 240, 240);
+        border-color: #adadad;
+        box-shadow: inset 0 0 0 2px #adadad;
+        color:#adadad;
+    }
+
+
+
+}

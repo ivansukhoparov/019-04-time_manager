@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
 
-    
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
 .page__body {
@@ -12,4 +14,54 @@
     padding: 10px;
 
     display: flex;
+    flex-direction: column;
+
+
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.page__projects-list {
+   /* background: #fff;
+    position: absolute;
+    width: 85vw;*/
+}
+
+.page__main {
+    position: fixed;
+    margin-left: -100px;
+    left: 50%;
+    top: 50%;
+}
+
+.page__menu {
+
+    @media (min-width: $tablet-width) {
+        position: fixed;
+        top: 0;
+        width: 200px;
+        margin-left: -100px;
+        left: 50%;
+    }
+
+
+}
+
+
+.page__add,
+.page__details {
+  /*  background: #fff;
+    position: absolute;
+    width: 85vw;
+
+    @media (min-width: $tablet-width) {
+        min-width: 230px;
+        right: 0;
+        position: fixed;
+        height: 93%;
+        width: 28%;
+    }*/
 }

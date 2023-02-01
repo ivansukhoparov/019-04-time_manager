@@ -32,12 +32,59 @@ p {
   font-size: 28px;
   margin: 0;
   padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .page__body {
   margin: 0;
   padding: 10px;
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .page__body {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page__projects-list {
+  /* background: #fff;
+   position: absolute;
+   width: 85vw;*/
+}
+
+.page__main {
+  position: fixed;
+  margin-left: -100px;
+  left: 50%;
+  top: 50%;
+}
+
+@media (min-width: 768px) {
+  .page__menu {
+    position: fixed;
+    top: 0;
+    width: 200px;
+    margin-left: -100px;
+    left: 50%;
+  }
+}
+
+.page__add,
+.page__details {
+  /*  background: #fff;
+    position: absolute;
+    width: 85vw;
+
+    @media (min-width: $tablet-width) {
+        min-width: 230px;
+        right: 0;
+        position: fixed;
+        height: 93%;
+        width: 28%;
+    }*/
 }
 
 .title {
@@ -56,11 +103,18 @@ p {
 }
 
 .content {
-  min-width: 320px;
+  display: flex;
+  flex-direction: column;
   border: 2px solid #000;
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
+}
+@media (min-width: 768px) {
+  .content {
+    width: 220px;
+    min-width: 30%;
+  }
 }
 
 .button {
@@ -147,8 +201,13 @@ p {
   background-repeat: no-repeat;
 }
 .button--close {
-  position: absolute;
-  margin-top: 10px;
+  margin: 0 0 10px auto;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .button--close {
+    display: none;
+  }
 }
 
 .button:hover::after,
@@ -190,6 +249,7 @@ p {
 .main__button {
   width: 200px;
   height: 200px;
+  margin: 20px 0;
   border-radius: 50%;
   font-size: 34px;
   font-weight: bold;
@@ -202,6 +262,18 @@ p {
 
 .main__button:active {
   background-color: rgb(240, 240, 240);
+}
+
+.main__controls {
+  display: none;
+}
+@media (min-width: 768px) {
+  .main__controls {
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .details {
@@ -301,11 +373,30 @@ p {
 }
 
 .mobile {
-  display: block;
+  display: flex;
 }
 @media (min-width: 768px) {
   .mobile {
     display: none;
+  }
+}
+
+.menu__nav {
+  gap: 10px;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden--mobile-only {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hidden--mobile-only {
+    display: flex;
   }
 }
 

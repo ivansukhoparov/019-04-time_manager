@@ -108,8 +108,12 @@
     }
 
     &--close {
-        position: absolute;
-        margin-top: 10px;
+margin: 0 0 10px auto;
+display: flex;
+@media (min-width: $tablet-width) {
+display: none;
+}
+
 
     }
 

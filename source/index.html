@@ -10,12 +10,14 @@
 
 <body class="page__body">
 
-    <section class="mobile">
-        <div class="title title--mobile mobile__menu">
-            <button class="button  button--add"><span class="visually-hidden">Open menu</span></button>
+    <section class="menu page__menu">
+        <div class="title title--mobile menu__nav">
             <button class="button  button--list"><span class="visually-hidden">Open menu</span></button>
+            <button class="button  button--add"><span class="visually-hidden">Open menu</span></button>
+            <button class="button  button--enter"><span class="visually-hidden">Open menu</span></button>
+            <button class="button  button--theme"><span class="visually-hidden">Open menu</span></button>
         </div>
-        <div class="title title--mobile mobile__active">
+        <div class="title  title--mobile mobile menu__active">
             <div class="mobile__wrapper">
                 <p class="mobile__active-text">01 - Item 1</p>
                 <p class="mobile__active-text">01:05:58</p>
@@ -24,15 +26,15 @@
         </div>
     </section>
 
-    <section class="main">
+    <section class="main page__main">
         <p class="main__timer" id="timer">00:00:00 </p>
         <button class="button main__button " id="start-stop-button">Start</button>
+
     </section>
 
-
-    <section class="content projects-list">
+    <section class="content hidden page__projects-list projects-list">
         <button class="button button--close"><span class="visually-hidden">CLose</span></button>
-        <a class="projects-list__info projects-list__info--add">Add new </a>
+
         <ul class="projects-list__list">
             <li class="projects-list__item projects-list__item--active">
                 <a class="projects-list__info projects-list__info--active">
@@ -64,10 +66,59 @@
                     <p class="projects-list__text">01:05:58</p>
                 </a>
             </li>
+            <li class="projects-list__item projects-list__item">
+                <a class="projects-list__info">
+                    <p class="projects-list__text">05 - Item 5</p>
+                    <p class="projects-list__text">01:05:58</p>
+                </a>
+            </li>
+            <li class="projects-list__item projects-list__item">
+                <a class="projects-list__info">
+                    <p class="projects-list__text">05 - Item 5</p>
+                    <p class="projects-list__text">01:05:58</p>
+                </a>
+            </li>
+            <li class="projects-list__item projects-list__item">
+                <a class="projects-list__info">
+                    <p class="projects-list__text">05 - Item 5</p>
+                    <p class="projects-list__text">01:05:58</p>
+                </a>
+            </li>
+            <li class="projects-list__item projects-list__item">
+                <a class="projects-list__info">
+                    <p class="projects-list__text">05 - Item 5</p>
+                    <p class="projects-list__text">01:05:58</p>
+                </a>
+            </li>
+            <li class="projects-list__item projects-list__item">
+                <a class="projects-list__info">
+                    <p class="projects-list__text">05 - Item 5</p>
+                    <p class="projects-list__text">01:05:58</p>
+                </a>
+            </li>
+            <li class="projects-list__item projects-list__item">
+                <a class="projects-list__info">
+                    <p class="projects-list__text">05 - Item 5</p>
+                    <p class="projects-list__text">01:05:58</p>
+                </a>
+            </li>
+
+            <li class="projects-list__item projects-list__item">
+                <a class="projects-list__info">
+                    <p class="projects-list__text">05 - Item 5</p>
+                    <p class="projects-list__text">01:05:58</p>
+                </a>
+            </li>
+            <li class="projects-list__item projects-list__item">
+                <a class="projects-list__info">
+                    <p class="projects-list__text">05 - Item 5</p>
+                    <p class="projects-list__text">01:05:58</p>
+                </a>
+            </li>
         </ul>
     </section>
 
-    <section class="content add">
+    <section class="content page__add add hidden">
         <button class="button button--close"><span class="visually-hidden">CLose</span></button>
         <div class=" title add__title">Add new</div>
         <form class="add__form" action="#">
@@ -84,7 +135,7 @@
         </form>
     </section>
 
-    <section class="content details">
+    <section class="content page__details details hidden">
         <button class="button button--close"><span class="visually-hidden">CLose</span></button>
         <div class="title details__title">01 - Item 1</div>
         <ul class="details__list">

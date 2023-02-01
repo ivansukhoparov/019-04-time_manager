@@ -31,10 +31,14 @@
 }
 
 .page__main {
-    position: fixed;
+    
+    @media (min-width: $tablet-width) {
+        position: fixed;
     margin-left: -100px;
     left: 50%;
-    top: 50%;
+width: 30%;
+    }
+
 }
 
 .page__menu {

@@ -10,25 +10,29 @@
 
 <body class="page__body">
 
-    <section class="menu page__menu">
-        <div class="title title--mobile menu__nav">
-            <button class="button  button--list"><span class="visually-hidden">Open menu</span></button>
-            <button class="button  button--add"><span class="visually-hidden">Open menu</span></button>
-            <button class="button  button--enter"><span class="visually-hidden">Open menu</span></button>
-            <button class="button  button--theme"><span class="visually-hidden">Open menu</span></button>
-        </div>
-        <div class="title  title--mobile mobile menu__active">
-            <div class="mobile__wrapper">
-                <p class="mobile__active-text">01 - Item 1</p>
-                <p class="mobile__active-text">01:05:58</p>
-            </div>
-            <button class="button button--more"><span class="visually-hidden">Show more</span></button>
-        </div>
-    </section>
 
     <section class="main page__main">
-        <p class="main__timer" id="timer">00:00:00 </p>
-        <button class="button main__button " id="start-stop-button">Start</button>
+        <div class="main__menu">
+            <div class="title title--mobile menu__nav">
+                <button class="button  button--list"><span class="visually-hidden">Open menu</span></button>
+                <button class="button  button--add"><span class="visually-hidden">Open menu</span></button>
+                <button class="button  button--enter"><span class="visually-hidden">Open menu</span></button>
+                <button class="button  button--theme"><span class="visually-hidden">Open menu</span></button>
+            </div>
+            <div class="title  title--mobile mobile menu__active">
+                <div class="mobile__wrapper">
+                    <p class="mobile__active-text">01 - Item 1</p>
+                    <p class="mobile__active-text">01:05:58</p>
+                </div>
+                <button class="button button--more"><span class="visually-hidden">Show more</span></button>
+            </div>
+        </div>
+
+        <div class="main__controls">
+            <p class="main__timer" id="timer">00:00:00 </p>
+            <button class="button main__button " id="start-stop-button">START</button>
+            <button class="button main__button main__button--pause " id="pause-button">PAUSE</button>
+        </div>
 
     </section>
 
@@ -126,8 +130,9 @@
             <input type="text" class="add__text-input" id="project-name" placeholder="New project" value="">
             <label class="add__label">Cost:</label>
             <div class="add__cost-wrapper">
-                           <input type="text" class="add__text-input " id="project-cost" placeholder="1000" value="">
-            <input type="text" class="add__text-input add__text-input--currency" id="project-currency" placeholder="$" value=""> 
+                <input type="text" class="add__text-input " id="project-cost" placeholder="1000" value="">
+                <input type="text" class="add__text-input add__text-input--currency" id="project-currency"
+                    placeholder="$" value="">
             </div>
 
             <button class="button add__button button--add"><span class="visually-hidden">Add

@@ -61,13 +61,12 @@ const buttonTheme = document.querySelector('.button--theme');
 const sectionList = document.querySelector('.page__projects-list');
 const sectionAdd = document.querySelector('.page__add');
 const sectionInfo = document.querySelector('.page__details');
-const sectionMenu = document.querySelector('.page__menu');
 const sectionMain = document.querySelector('.page__main');
 // place for more constants contain othe sections
 
 
 const toggleMain = function(){
-    sectionMenu.classList.toggle('hidden--mobile-only')
+
     sectionMain.classList.toggle('hidden--mobile-only')
 }
 

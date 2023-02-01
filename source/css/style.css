@@ -55,11 +55,13 @@ p {
    width: 85vw;*/
 }
 
-.page__main {
-  position: fixed;
-  margin-left: -100px;
-  left: 50%;
-  top: 50%;
+@media (min-width: 768px) {
+  .page__main {
+    position: fixed;
+    margin-left: -100px;
+    left: 50%;
+    width: 30%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -239,6 +241,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 30px;
 }
 
 .main__timer {
@@ -255,6 +258,12 @@ p {
   font-weight: bold;
   background-color: rgb(230, 230, 230);
 }
+.main__button--pause {
+  height: 40px;
+  border-radius: 0;
+  font-size: 24px;
+  margin: 0;
+}
 
 .main__button:hover {
   background-color: rgb(221, 221, 221);
@@ -265,15 +274,10 @@ p {
 }
 
 .main__controls {
-  display: none;
-}
-@media (min-width: 768px) {
-  .main__controls {
-    width: 180px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .details {

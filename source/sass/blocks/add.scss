@@ -16,9 +16,11 @@
 .add__cost-wrapper{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: 0 0 20px 0;
 }
 .add__text-input{
+    font-family: 'txt', Arial, sans-serif;
     flex-grow: 1;
     height: 30px;
     margin: 0;
@@ -28,6 +30,7 @@
     font-size: 20px;
 
     &--currency{
+        margin-left: -54px;
         width: 30px;
         flex-grow: 0;
         text-align: center;

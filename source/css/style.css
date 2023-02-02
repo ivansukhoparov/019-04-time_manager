@@ -9,6 +9,10 @@ p {
   padding: 0;
 }
 
+button {
+  font-family: "txt", Arial, sans-serif;
+}
+
 @font-face {
   font-family: "Roboto";
   font-weight: 400;
@@ -28,7 +32,7 @@ p {
   src: url(../fonts/robotobold.woff2);
 }
 .page {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "txt", Arial, sans-serif;
   font-size: 28px;
   margin: 0;
   padding: 0;
@@ -44,21 +48,26 @@ p {
 }
 @media (min-width: 768px) {
   .page__body {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    /*
+            flex-direction: row;
+            justify-content: space-between;
+            */
   }
 }
 
-.page__projects-list {
-  /* background: #fff;
-   position: absolute;
-   width: 85vw;*/
+@media (min-width: 768px) {
+  .page__projects-list {
+    position: absolute;
+    left: 0;
+  }
 }
 
 @media (min-width: 768px) {
   .page__main {
     position: fixed;
-    margin-left: -100px;
+    margin-left: -15%;
     left: 50%;
     width: 30%;
   }
@@ -88,6 +97,13 @@ p {
         width: 28%;
     }*/
 }
+@media (min-width: 768px) {
+  .page__add,
+  .page__details {
+    position: fixed;
+    right: 0;
+  }
+}
 
 .title {
   height: 60px;
@@ -95,12 +111,16 @@ p {
   padding: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   border: 2px solid #000;
   border-radius: 20px;
   align-items: center;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+  justify-content: center;
 }
 .title--mobile {
+  justify-content: space-between;
   margin: 10px;
 }
 
@@ -318,10 +338,12 @@ p {
 .add__cost-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin: 0 0 20px 0;
 }
 
 .add__text-input {
+  font-family: "txt", Arial, sans-serif;
   flex-grow: 1;
   height: 30px;
   margin: 0;
@@ -331,6 +353,7 @@ p {
   font-size: 20px;
 }
 .add__text-input--currency {
+  margin-left: -54px;
   width: 30px;
   flex-grow: 0;
   text-align: center;
@@ -347,6 +370,7 @@ p {
   border-radius: 20px;
   align-items: flex-start;
   justify-content: center;
+  font-size: 18px;
 }
 .projects-list__info--active {
   color: #000000;

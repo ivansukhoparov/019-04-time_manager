@@ -3,49 +3,38 @@
     font-size: 28px;
     margin: 0;
     padding: 0;
-
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 .page__body {
     margin: 0;
     padding: 10px;
-
     display: flex;
     flex-direction: column;
 
-
-
     @media (min-width: $tablet-width) {
-display: grid;
-grid-template-columns: 33% 33% 33%;
-/*
-        flex-direction: row;
-        justify-content: space-between;
-        */
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
     }
 }
 
 .page__projects-list {
 
     @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 0;
+        position: absolute;
+        left: 0;
     }
-
 }
 
 .page__main {
-    
+
     @media (min-width: $tablet-width) {
         position: fixed;
-    margin-left: -15%;
-    left: 50%;
-width: 30%;
+        margin-left: -15%;
+        left: 50%;
+        width: 30%;
     }
-
 }
 
 .page__menu {
@@ -57,27 +46,13 @@ width: 30%;
         margin-left: -100px;
         left: 50%;
     }
-
-
 }
 
 
 .page__add,
 .page__details {
     @media (min-width: $tablet-width) {
-   position: fixed;
-    right: 0;
-    }
- 
-  /*  background: #fff;
-    position: absolute;
-    width: 85vw;
-
-    @media (min-width: $tablet-width) {
-        min-width: 230px;
-        right: 0;
         position: fixed;
-        height: 93%;
-        width: 28%;
-    }*/
+        right: 0;
+    }
 }

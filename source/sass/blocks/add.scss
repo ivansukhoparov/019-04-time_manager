@@ -1,25 +1,26 @@
-.add__form{
+.add__form {
     display: flex;
     flex-direction: column;
     font-size: 20px;
 }
 
-.add__button{
+.add__button {
     align-self: center;
 }
 
 
-.add__label{
-    margin:10px;
+.add__label {
+    margin: 10px;
 }
 
-.add__cost-wrapper{
+.add__cost-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 0 0 20px 0;
 }
-.add__text-input{
+
+.add__text-input {
     font-family: 'txt', Arial, sans-serif;
     flex-grow: 1;
     height: 30px;
@@ -29,7 +30,7 @@
     border-radius: 20px;
     font-size: 20px;
 
-    &--currency{
+    &--currency {
         margin-left: -54px;
         width: 30px;
         flex-grow: 0;

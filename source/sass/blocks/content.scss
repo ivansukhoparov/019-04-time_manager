@@ -1,18 +1,14 @@
-.content{
+.content {
     display: flex;
     flex-direction: column;
-
-
     border: 2px solid #000;
     border-radius: 20px;
     padding: 10px;
-    margin:10px;
-
+    margin: 10px;
 
     @media (min-width: $tablet-width) {
-    width: 220px;
-    min-width: 30%;
-
+        width: 220px;
+        min-width: 30%;
     }
 
 }

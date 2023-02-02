@@ -4,11 +4,9 @@
     border: 2px solid #000;
     border-radius: 50%;
     padding: 10px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: rgba($color: #000000, $alpha: 0);
 
     &--add {
@@ -108,15 +106,13 @@
     }
 
     &--close {
-margin: 0 0 10px auto;
-display: flex;
-@media (min-width: $tablet-width) {
-display: none;
-}
+        margin: 0 0 10px auto;
+        display: flex;
 
-
+        @media (min-width: $tablet-width) {
+            display: none;
+        }
     }
-
 }
 
 .button:hover::after,

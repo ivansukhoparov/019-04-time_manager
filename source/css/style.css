@@ -13,24 +13,6 @@ button {
   font-family: "txt", Arial, sans-serif;
 }
 
-@font-face {
-  font-family: "Roboto";
-  font-weight: 400;
-  src: url(../fonts/roboto.woff);
-  src: url(../fonts/roboto.woff2);
-}
-@font-face {
-  font-family: "Roboto";
-  font-weight: 500;
-  src: url(../fonts/robotomedium.woff);
-  src: url(../fonts/robotomedium.woff2);
-}
-@font-face {
-  font-family: "Roboto";
-  font-weight: 700;
-  src: url(../fonts/robotobold.woff);
-  src: url(../fonts/robotobold.woff2);
-}
 .page {
   font-family: "txt", Arial, sans-serif;
   font-size: 28px;
@@ -50,10 +32,6 @@ button {
   .page__body {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    /*
-            flex-direction: row;
-            justify-content: space-between;
-            */
   }
 }
 
@@ -83,20 +61,6 @@ button {
   }
 }
 
-.page__add,
-.page__details {
-  /*  background: #fff;
-    position: absolute;
-    width: 85vw;
-
-    @media (min-width: $tablet-width) {
-        min-width: 230px;
-        right: 0;
-        position: fixed;
-        height: 93%;
-        width: 28%;
-    }*/
-}
 @media (min-width: 768px) {
   .page__add,
   .page__details {
@@ -278,7 +242,7 @@ button {
   font-weight: bold;
   background-color: rgb(230, 230, 230);
 }
-.main__button--pause {
+.main__button--stop {
   height: 40px;
   border-radius: 0;
   font-size: 24px;

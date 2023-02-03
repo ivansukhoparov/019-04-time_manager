@@ -4,7 +4,7 @@ const timer = document.querySelector('#timer');
 
 let counter = 0;
 let sessionTime = 0;
-let start = false;
+let start, stopTimer = false;
 let startTime, currentTime, pauseTime;
 
 // function creating a delay for the specified number of milliseconds
@@ -24,8 +24,9 @@ const addZero = function (value) {
 const printTime = function (value) {
     const seconds = value % 60; // get seconds
     const minutes = Math.floor(value / 60 % 60); // get minutes
-    const hour = Math.floor(value / 60 / 60 % 60); // get hours
-    return addZero(hour) + ':' + addZero(minutes) + ':' + addZero(seconds);
+    const hours = Math.floor(value / 60 / 60 % 60); // get hours
+    const days = Math.floor(value / 60 / 60 / 60 % 24);
+    return days + ':' + addZero(hours) + ':' + addZero(minutes) + ':' + addZero(seconds);
 }
 
 
@@ -38,7 +39,10 @@ const countingTime = async function () {
         timer.textContent = printTime(timerValue);
         await sleep(1000);
     };
-    sessionTime=timerValue;
+    sessionTime = timerValue;
+    if (stopTimer) {
+        sessionTime = 0;
+    }
 }
 
 
@@ -47,6 +51,7 @@ startButton.addEventListener('click', (evt) => {
     evt.preventDefault();
     startTime = new Date();
     if (!start) {
+        stopTimer = false;
         start = true;
         countingTime();
         startButton.textContent = 'PAUSE'
@@ -59,6 +64,11 @@ startButton.addEventListener('click', (evt) => {
 // add events to STOP button
 stopButton.addEventListener('click', (evt) => {
     evt.preventDefault();
-    sessionTime=0;
-    timer.textContent = printTime(0);
+
+    start = false;
+    stopTimer = true;
+
+
+    startButton.textContent = 'START'
+
 })
